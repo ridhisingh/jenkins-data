@@ -1,0 +1,10 @@
+Started by user [8mha:////4FhCu2kyQnqwOTXnAF5Yn2vGjjWjJxmNuD+9i8wyDQYoAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYB/dLi1CL9otTU5IxEoLZKACiomVnFAAAA[0mreecha soni
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test3
+[test3] $ /bin/sh -xe /tmp/jenkins1036489525910862473.sh
++ export AWS_ACCESS_KEY_ID=AKIATUX5JYGHYNPUFWGQ
++ export AWS_SECRET_ACCESS_KEY=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
++ aws s3 cp /tmp/myfol/myfile.txt s3://myjenkins-mysql-backups/first-script.sh
+/tmp/jenkins1036489525910862473.sh: 4: /tmp/jenkins1036489525910862473.sh: aws: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

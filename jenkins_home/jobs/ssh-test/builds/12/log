@@ -1,0 +1,19 @@
+Started by user [8mha:////4FhCu2kyQnqwOTXnAF5Yn2vGjjWjJxmNuD+9i8wyDQYoAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYB/dLi1CL9otTU5IxEoLZKACiomVnFAAAA[0mreecha soni
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh-test
+[SSH] script:
+
+NAME=Reecha
+echo "Hello, we are in the remote machine : $(whoami) and my name is $NAME , current date and time is $(date) "  > /tmp/new-remote-file
+echo "remote host test"> /tmp/testing.txt
+/tmp/new-script.sh
+
+[SSH] executing...
+
+Unknown options: May,8,07:24:29,UTC,2020.txt
+
+[SSH] completed
+[SSH] exit-status: 255
+
+Build step 'Execute shell script on remote host using ssh' marked build as failure
+Finished: FAILURE

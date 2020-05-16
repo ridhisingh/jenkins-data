@@ -1,0 +1,10 @@
+Started by user [8mha:////4FhCu2kyQnqwOTXnAF5Yn2vGjjWjJxmNuD+9i8wyDQYoAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYB/dLi1CL9otTU5IxEoLZKACiomVnFAAAA[0mreecha soni
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/job-script
+[job-script] $ /bin/sh -xe /tmp/jenkins8038539112532948425.sh
++ NAME=Richa
++ LASTNAME=Soni
++ chmod +x /var/jenkins_home/first-script.sh
++ /var/jenkins_home/first-script.sh Richa Soni
+If you want to see the name, please mark the show option
+Finished: SUCCESS

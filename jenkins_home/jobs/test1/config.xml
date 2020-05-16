@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>remote_user@remote_host:22</siteName>
+      <command>DATE=$(date +%H-%M)
+BACKUP=db-$DATE.sql
+
+DB_HOST=db_host
+DB_PAASWORD=12345
+DB_NAME=testdb
+AWS_SECRET=uh2HyLog2dJ4efQDhxLCWG+raw68ZiGqPzZFknDA
+BUCKET_NAME=myjenkins-mysql-backups
+
+mysql -u root -h $DB_HOST -p $DB_PASSWORD $DB_NAME &gt; /tmp/$BACKUP &amp;&amp; \
+export AWS_ACCESS_KEY_ID=AKIATUX5JYGHYNPUFWGQ  &amp;&amp; \
+export AWS_SECRET_ACCESS_KEY=$AWS_SECRET &amp;&amp; \
+echo &quot;Uploading your $BACKUP backup&quot; &amp;&amp; \
+aws s3 cp /tmp/db-$DATE.sql s3://$BUCKET_NAME/$BACKUP</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
